@@ -26,6 +26,4 @@ Features
 - Pandas
 - NumPy
 
-## Author
 
-Keerthana A
