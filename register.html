@@ -1,0 +1,86 @@
+<html>
+
+    <head>
+        <title>sign up</title>
+    </head>
+
+    <body style="background-color: rgb(60, 13, 47); color: white;">
+
+        <center>
+        <h1>WiseWalk👣</h1>
+        <h5>CHAT | WALK | TRACK</h5>
+        <p>Achieving daily step goals releases motivation and positive energy.</p>
+        </center>
+
+        <hr>
+
+        <center>
+            <h2>USER DETAILS</h2>
+            <form>
+                <table>
+
+                    <tr>
+                        <td>Name : </td> <td><input type="text" placeholder="enter your Name"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Age : </td> <td><input type="number" placeholder="enter your Age"></td>
+                    </tr>
+
+                      <tr>
+                        <td>Height : </td> <td><input type="text" placeholder="enter your Height"></td>
+                    </tr>
+
+                      <tr>
+                        <td>Weight : </td> <td><input type="text" placeholder="enter your Weight"></td>
+                    </tr>
+
+                      <tr>
+                        <td>Email : </td> <td><input type="email" placeholder="enter your Email"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender : </td>
+                         <td><input type="radio" name="gender">male 
+                            <input type="radio" name="gender">female
+                        </td>
+                    </tr>
+
+                  
+
+                    <tr>
+                        <td><input type="reset"></td>
+                        <td><input type="submit"></td>
+                    </tr>
+                </table>
+            </form>
+            <div id="success-message"style="color:lightgreen;margin-top: 10px;"></div>
+            <div id="start-app" style="display:none; margin-top:15px;">
+            <button onclick="startApp()">Start App</button>
+            </div>
+
+        </center>
+
+        <hr>
+        <script>
+        
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            document.getElementById("success-message").innerText = "✅ Registration successful!";
+            document.getElementById("start-app").style.display = "block"; 
+        });
+
+        
+        document.querySelector("input[type='reset']").addEventListener("click", function() {
+            document.getElementById("success-message").innerText = "";
+            document.getElementById("start-app").style.display = "none"; 
+        });
+
+        function startApp(){
+            window.location.href="https://unpervertedly-unbarbered-ileen.ngrok-free.dev";
+        }
+    </script>
+
+        
+    </body>
+</html>

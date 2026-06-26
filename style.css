@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+padding:0% ;
+}
+
+nav{
+    background-color: rgb(222, 175, 83);
+    color:white;
+    padding: 20px;
+}
+li,h1,ul{
+    display: inline;
+}
+ul{
+    margin-left: 60%;
+}
+li{
+    color: white;
+    cursor: pointer;
+}
+li:hover{
+    color: rgb(126, 82, 136);
+}
+input{
+    width: 80%;
+    padding: 15px;
+    border: solid;
+    border-color:rgb(222, 175, 83) ;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+img{
+    padding-top: 50px;
+}
+img { animation: zoom 2s ease-in-out infinite alternate; }
+@keyframes zoom { from { transform: scale(1); } to { transform: scale(1.1); } }
+
+.box{
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+    display: inline-block;
+    width: 240px;
+}
+.box:hover{
+    color: white;
+    background-color:rgb(222, 175, 83);
+}
+.services{
+    text-align: center;
+}
+
+.about{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
